@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.showMenu = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // showMenu
@@ -41,20 +42,30 @@
             this.showMenu.UseVisualStyleBackColor = true;
             this.showMenu.Click += new System.EventHandler(this.showMenu_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(13, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 19);
+            this.textBox1.TabIndex = 1;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 223);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.showMenu);
             this.Name = "Login";
             this.Text = "Form2";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button showMenu;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
